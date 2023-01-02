@@ -12,7 +12,7 @@ namespace SchGenerator
                 await context.Database.ExecuteSqlRawAsync("TRUNCATE TABLE [Events]");
 
                 DateTime start = DateTime.Now;
-                DateTime end = start.AddMonths(3);
+                DateTime end = start.AddMonths(2);
                 end = new DateTime(end.Year, end.Month, 1);
                 end.AddDays(-1);
 
